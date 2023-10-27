@@ -50,7 +50,7 @@ public class Main {
         int carIdToDelete = 3; // Örnek bir araba ID'si
         carService.deleteCar(carIdToDelete);
 
-        // Araba fonksiyonları çalıştırma ve güncelleme
+        // 1 numaralı Arabanın fonksiyonları çalıştırma ve güncelleme
 
         carService.setDistanceAndSpeed(1,100,50);
         carService.calculateArrivalTime(1);
