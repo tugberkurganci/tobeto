@@ -8,7 +8,6 @@ import main.java.org.example3.logging.DatabaseLogger;
 import main.java.org.example3.logging.FileLogger;
 import main.java.org.example3.logging.MailLogger;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {

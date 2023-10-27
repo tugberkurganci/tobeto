@@ -1,6 +1,5 @@
 package main.java.org.example3.business;
 
-import main.java.org.example3.dataAccess.JdbcProductDao;
 import main.java.org.example3.dataAccess.ProductDao;
 import main.java.org.example3.entities.Product;
 import main.java.org.example3.logging.Logger;

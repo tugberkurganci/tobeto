@@ -4,24 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f675d343-1bd8-4871-ad39-e048204d18d1" name="Changes" comment="second">
-      <change afterPath="$PROJECT_DIR$/Exercise3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/kamp1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/business/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/dataAccess/HibernateProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/dataAccess/JdbcProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/dataAccess/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/logging/DatabaseLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/logging/FileLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/logging/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/logging/MailLogger.java" afterDir="false" />
+    <list default="true" id="f675d343-1bd8-4871-ad39-e048204d18d1" name="Changes" comment="oop3">
+      <change afterPath="$PROJECT_DIR$/Exercise4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/kamp1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/business/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/business/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/dataAccess/CarDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/dataAccess/CarDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/entities/AbstractVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/entities/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/entities/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Tobeto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tobeto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/business/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise3/src/main/java/org/example3/business/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tobeto/main/java/org/example3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tobeto/main/java/org/example3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tobeto/main/java/org/example3/business/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tobeto/main/java/org/example3/business/ProductService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2XDAKGWr1KAQahcfjZrq7OEP1Fo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,6 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/tugberk/Desktop/Tobeto/Exercise3/src/main/java/org/example3/logging",
     "last_opened_file_path": "C:/Users/tugberk/Desktop/Tobeto",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -65,7 +70,7 @@
       <recent name="C:\Users\tugberk\Desktop\Tobeto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main.java.org.example3.Main">
+  <component name="RunManager" selected="Application.main.java.org.java.org.exercise4.Main">
     <configuration name="D1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.org.example.D1" />
       <module name="Tobeto" />
@@ -118,8 +123,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.java.org.java.org.exercise4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.org.java.org.exercise4.Main" />
+      <module name="Tobeto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.org.java.org.exercise4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main.java.org.java.org.exercise4.Main" />
         <item itemvalue="Application.main.java.org.example3.Main" />
         <item itemvalue="Application.D1" />
         <item itemvalue="Application.main.java.org.example.Main" />
@@ -157,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698156231021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="oop3">
+      <created>1698226967181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698226967181</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +199,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second" />
-    <option name="LAST_COMMIT_MESSAGE" value="second" />
+    <MESSAGE value="oop3" />
+    <option name="LAST_COMMIT_MESSAGE" value="oop3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/Main.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/Main.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/dataAccess/CarDaoImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/dataAccess/CarDaoImpl.java</url>
+          <line>20</line>
+          <properties class="main.java.org.java.org.exercise4.dataAccess.CarDaoImpl" method="getCarById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Exercise4/src/main/java/org/java.org.exercise4/Main.java</url>
+          <line>17</line>
+          <properties class="main.java.org.java.org.exercise4.Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
