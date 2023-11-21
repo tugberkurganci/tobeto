@@ -43,7 +43,7 @@ public class PaymentController {
             payment.setPaymentAmount(updatedPayment.getPaymentAmount());
             payment.setPaymentDate(updatedPayment.getPaymentDate());
             payment.setPaymentOption(updatedPayment.getPaymentOption());
-            // rental ilişkisini güncelleme (eğer gerekirse)
+          
             payment.setRental(updatedPayment.getRental());
 
             return paymentRepository.save(payment);
