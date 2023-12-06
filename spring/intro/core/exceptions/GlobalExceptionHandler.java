@@ -13,14 +13,7 @@ import java.util.HashMap;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(RuntimeException.class)
-    @ResponseStatus(code= HttpStatus.BAD_REQUEST)
-    public ProblemDetails handleBusinessException(RuntimeException businessException) {
-        ProblemDetails problemDetails = new ProblemDetails();
-        problemDetails.setMessage(businessException.getMessage());
 
-        return problemDetails;
-    }
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(code=HttpStatus.BAD_REQUEST)
     public ProblemDetails handleValidationException(MethodArgumentNotValidException methodArgumentNotValidException) {
@@ -34,6 +27,15 @@ public class GlobalExceptionHandler {
 
         return validationProblemDetails;
     }
+    @ExceptionHandler(RuntimeException.class)
+    @ResponseStatus(code= HttpStatus.BAD_REQUEST)
+    public ProblemDetails handleBusinessException(RuntimeException businessException) {
+        ProblemDetails problemDetails = new ProblemDetails();
+        problemDetails.setMessage(businessException.getMessage());
+
+        return problemDetails;
+    }
+  
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
