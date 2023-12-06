@@ -14,33 +14,29 @@ import java.util.HashMap;
 public class GlobalExceptionHandler {
 
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    @ResponseStatus(code=HttpStatus.BAD_REQUEST)
-    public ProblemDetails handleValidationException(MethodArgumentNotValidException methodArgumentNotValidException) {
-        ValidationProblemDetails validationProblemDetails = new ValidationProblemDetails();
-        validationProblemDetails.setMessage("VALIDATION.EXCEPTION");
-        validationProblemDetails.setValidationErrors(new HashMap<String, String>());
-
-        for (FieldError fieldError : methodArgumentNotValidException.getBindingResult().getFieldErrors()) {
-            validationProblemDetails.getValidationErrors().put(fieldError.getField(), fieldError.getDefaultMessage());
-        }
-
-        return validationProblemDetails;
-    }
-    @ExceptionHandler(RuntimeException.class)
-    @ResponseStatus(code= HttpStatus.BAD_REQUEST)
-    public ProblemDetails handleBusinessException(RuntimeException businessException) {
-        ProblemDetails problemDetails = new ProblemDetails();
-        problemDetails.setMessage(businessException.getMessage());
-
-        return problemDetails;
-    }
-  
-
-    @ExceptionHandler(Exception.class)
+  @ExceptionHandler({MethodArgumentNotValidException.class, RuntimeException.class, Exception.class})
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
     public ProblemDetails handleException(Exception ex) {
-        String errorMessage = "An error occurred: " + ex.getMessage();
-        return new ProblemDetails(errorMessage);
+        if (ex instanceof MethodArgumentNotValidException) {
+            // Validation exception handling
+            ValidationProblemDetails validationProblemDetails = new ValidationProblemDetails();
+            validationProblemDetails.setMessage("VALIDATION.EXCEPTION");
+            validationProblemDetails.setValidationErrors(new HashMap<>());
+
+            for (FieldError fieldError : ((MethodArgumentNotValidException) ex).getBindingResult().getFieldErrors()) {
+                validationProblemDetails.getValidationErrors().put(fieldError.getField(), fieldError.getDefaultMessage());
+            }
+
+            return validationProblemDetails;
+        } else if (ex instanceof RuntimeException) {
+            // Business exception handling
+            ProblemDetails problemDetails = new ProblemDetails();
+            problemDetails.setMessage(ex.getMessage());
+            return problemDetails;
+        } else {
+            // General exception handling
+            String errorMessage = "An error occurred: " + ex.getMessage();
+            return new ProblemDetails(errorMessage);
+        }
     }
 }
